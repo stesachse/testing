@@ -1,0 +1,18 @@
+#
+# Editorconfig
+#
+# For details see:
+# http://editorconfig.org/
+#
+
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{pl,pm,t,pod}]
+indent_style = space
+indent_size = 4
+
+[Makefile]
+indent_style = tab
