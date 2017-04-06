@@ -1,0 +1,147 @@
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+ 
+test-devices-package - test COM::DEV-ZERO::Devices::* classes
+
+=head1 VERSION
+
+Version v0.0.1
+ 
+=head1 SYNOPSIS
+ 
+test-devices-package [Options] PACKAGE_NAME [ACTION]
+ 
+ Options:
+   --cpe-passwd PASSWD     password to access the cpe
+   --addr-use KEY          use ip aliased as KEY to connect
+   --addr-set KEY=IP       define alias KEY for IP
+                           (default: lan=192.168.1.1)
+   --action-arg KEY=VALUE  define key/value pairs as argument
+   --list-actions          list available actions
+   
+   -v, --verbose           increase the level of logging
+   --log-error
+   --log-warn
+   --log-info
+   --log-debug
+   --log-trace             explicitly set level of logging
+   
+   -h, -?                  short help message
+   --help                  brief help message
+   --man                   full man page
+
+=head1 DESCRIPTION
+
+B<test-devices-package> can test I<COM::DEV-ZERO::Devices::*> classes
+during development.
+
+Users will find information in L<"EXAMPLES"> to get started. New users
+may benefit from the short tutorial which is not written yet :-P
+
+=head1 EXAMPLES
+
+Here are some more or less helpful examples for this nifty tool. be
+patient for more use cases and examples.
+
+  test-devices-package -h
+
+This will produce a very nice help message. maybe i should use lorem
+ipsum as placeholder.
+
+  test-devices-package --help
+
+oh boy! maybe you know what's coming now? This will produce a brief help
+message. And it makes you even more angry because of more placeholder
+full of lorem ipsum instead of documentation for this tool.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua.
+
+  test-devices-package --man
+
+This will produce a very nice and very very long man page with tons of
+placeholder. and of course: they are full of lorem ipsum.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et sed diam voluptua. At vero eos et
+accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+=head1 OPTIONS
+ 
+=over 4
+
+=item B<--cpe-passwd=PASSWD>
+
+password to access the cpe
+
+=item B<--addr-use=KEY>
+
+use ip aliased as KEY to connect
+
+=item B<--addr-set KEY=IP>
+
+define alias KEY for IP (default: lan=192.168.1.1)
+
+=item B<--action-arg KEY=VALUE>
+
+define key/value pairs as argument for B<ACTION>
+
+=item B<--list-actions>
+
+list available actions
+
+=item B<-v>, B<--verbose>
+
+increase the level of logging currently being done. can be given
+more than once to be more verbose
+
+=item B<--log-error>, B<--log-warn>, B<--log-info>, B<--log-debug>, B<--log-trace>
+
+set the level of logging currently being done. This options has
+priority over B<--verbose>
+
+=item B<-h>, B<-?>
+
+Print a short help message and exits.
+ 
+=item B<--help>
+ 
+Print a brief help message and exits.
+ 
+=item B<--man>
+ 
+Prints the manual page and exits.
+ 
+=back
+ 
+=head1 DESCRIPTION
+ 
+B<test-devices-package> handles testing of I<COM::DEV-ZERO::Devices::*> classes.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+zzril delenit augue duis dolore te feugait nulla facilisi.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+=head1 AUTHORS
+
+Stephan Sachse, C<< <ste.sachse at gmail.com> >>
+
+=head1 COPYRIGHT
+
+Copyright 2017 Stephan Sachse. All rights reserved.
+
+=cut
